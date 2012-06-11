@@ -16,11 +16,6 @@ public class SimpleController {
     @Autowired
     private ResponseService responseService;
 
-    @RequestMapping(value = "/gettest", method = RequestMethod.GET)
-    public @ResponseBody String testuj(){
-        return "TAK";
-    }
-
     @RequestMapping(value = "/get/response.json", method = RequestMethod.GET)
     public JSONResponse getJsonResponse(){
         return responseService.getJsonResponse();
