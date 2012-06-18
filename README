@@ -1,4 +1,12 @@
 HEROKU:
 
+Application demonstrates how to switch between json and xml content using Spring MVC.
+
+
+Deployed to HEROKU:
 http://spring-mvc-json-xml-demo.herokuapp.com/get/response.xml
 
+
+
+TODO:
+- add test

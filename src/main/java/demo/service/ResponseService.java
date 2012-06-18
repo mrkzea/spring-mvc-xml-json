@@ -8,7 +8,6 @@ public interface ResponseService {
 
     public JSONResponse getJsonResponse();
 
-
     public XMLResponse getXmlResponse();
 
 }

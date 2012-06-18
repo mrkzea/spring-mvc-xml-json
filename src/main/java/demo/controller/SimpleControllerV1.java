@@ -11,11 +11,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 
 @Controller
-public class SimpleController {
+public class SimpleControllerV1 {
 
     @Autowired
     private ResponseService responseService;
 
+    /*METHOD 1*/
     @RequestMapping(value = "/get/response.json", method = RequestMethod.GET)
     public JSONResponse getJsonResponse(){
         return responseService.getJsonResponse();
@@ -24,5 +25,4 @@ public class SimpleController {
     public  XMLResponse getXmlResponse(){
         return responseService.getXmlResponse();
     }
-
 }
